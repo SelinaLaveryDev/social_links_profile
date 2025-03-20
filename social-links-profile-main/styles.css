@@ -1,0 +1,19 @@
+:root {
+  --grey-900: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333333;
+  --green-100: #c4f82a;
+
+  --text-24: 24px;
+  --text-14: 14px;
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("/assets/fonts/static/Inter-Bold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url("./assets/fonts/static/Inter-Regular.ttf") format(opentype);
+}
