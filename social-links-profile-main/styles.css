@@ -45,7 +45,9 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--grey-900);
-  margin: auto;
+  padding: 100px;
+  border: 1px solid greenyellow;
+  height: 100vh;
 }
 
 .container {
@@ -132,4 +134,36 @@ li:hover {
 .attribution a {
   color: var(--green-100);
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+  .container {
+    padding: 24px;
+  }
+
+  li {
+    padding: 12px 82px;
+  }
+
+  li:hover {
+    background-color: var(--green-100);
+    color: var(--grey-700);
+    cursor: pointer;
+  }
+
+  .attribution {
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: var(--inter-reg);
+    color: white;
+    position: fixed;
+    bottom: 10px;
+  }
+  .attribution a {
+    color: var(--green-100);
+    font-size: 1.1rem;
+  }
 }
