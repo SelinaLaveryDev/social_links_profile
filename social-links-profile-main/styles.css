@@ -1,19 +1,135 @@
 :root {
+  /* colours */
   --grey-900: #141414;
   --grey-800: #1f1f1f;
   --grey-700: #333333;
   --green-100: #c4f82a;
 
-  --text-24: 24px;
-  --text-14: 14px;
+  /* typography */
+  --inter-reg: "Inter-Regular";
+  --inter-semibold: "Inter-SemiBold";
+  --inter-bold: "Inter-Bold";
+  --text-24: 2.4rem;
+  --text-14: 1.4rem;
 }
 
 @font-face {
-  font-family: "Inter Bold";
-  src: url("/assets/fonts/static/Inter-Bold.ttf") format("opentype");
+  font-family: "Inter-Bold";
+  src: url("/assets/fonts/static/Inter-Bold.ttf") format(opentype);
 }
 
 @font-face {
-  font-family: "Inter Regular";
+  font-family: "Inter-Regular";
   src: url("./assets/fonts/static/Inter-Regular.ttf") format(opentype);
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("./assets/fonts/static/Inter-SemiBold.ttf") format(opentype);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--inter-reg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-900);
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-800);
+  padding: 40px;
+  gap: 24px;
+  border-radius: 12px;
+}
+
+h1 {
+  padding: 2px;
+}
+
+h1 span {
+  color: var(--green-100);
+  display: block;
+}
+
+img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50px;
+}
+
+.text-preset-1 {
+  font-family: var(--inter-semibold);
+  font-size: var(--text-24);
+  color: white;
+}
+
+.text-preset-2 {
+  font-family: var(--inter-reg);
+  font-size: var(--text-14);
+  color: white;
+}
+
+.text-preset-2-bold {
+  font-family: var(--inter-bold);
+  font-size: var(--text-14);
+}
+
+.text-preset-1,
+.text-preset-2,
+.text-preset-2-bold {
+  line-height: 1.5;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+li {
+  list-style: none;
+  width: 100%;
+  padding: 12px 95px;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--grey-700);
+}
+
+li:hover {
+  background-color: var(--green-100);
+  color: var(--grey-700);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: var(--inter-reg);
+  color: white;
+  position: fixed;
+  bottom: 10px;
+}
+.attribution a {
+  color: var(--green-100);
+  font-size: 1.1rem;
 }
